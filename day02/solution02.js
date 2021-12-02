@@ -1,1 +1,1 @@
-document.querySelector("pre").innerText.split("\n").map(n=>n.split(" ")).map(n=>[n[0][0]??"f",isNaN(a=+n[1])?0:a]).reduce(([p,d,a],[o,x])=>[p+(o=="f")*x,d+(o=="f")*a*x,a+(o!="f")*Math.pow(-1,o=="u")*x], [0,0,0]).reduce((p,c,i)=>p*(i<2?c:1),1)
+document.querySelector("pre").innerText.split("\n").map(n=>n.split(" ")).map(n=>[n[0][0]??"f",isNaN(a=+n[1])?0:a]).reduce(([p,d,a],[o,x])=>[p+(o=="f")*x,d+(o=="f")*a*x,a+(o!="f")*Math.pow(-1,o=="u")*x],[0,0,0]).reduce((p,c,i)=>p*(i<2?c:1),1)
