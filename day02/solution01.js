@@ -1,0 +1,1 @@
+document.querySelector("pre").innerText.split("\n").map(n=>n.split(" ")).map(n=>[n[0][0]??"f",isNaN(a=+n[1])?0:a]).reduce(([x,z],[d,n])=>[x+(d=="f")*n,z+((d!="f")*Math.pow(-1, (d=="u"))*n)],[0,0]).reduce((m,c)=>m*c,1)
