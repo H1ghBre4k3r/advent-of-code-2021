@@ -1,0 +1,1 @@
+document.querySelector("pre").innerText.split("\n").flatMap(e=>e.split("")).reduce((p,c,i,a)=>{p[i%12]+=Math.pow(-1,+c);return p},Array(12).fill(0)).reduce(([a,b],c)=>[a+=c>0?0:1,b+=c>0?1:0],["",""]).reduce((p,c)=>p*parseInt(c,2),1)
